@@ -1,0 +1,61 @@
+.page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width: 768px) {
+    .page h1{
+        font-size: 30px;
+    }
+}
+
+form button {
+    margin-left: 10px;
+}
+
+main { 
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    max-width: 800px;
+}
+
+@media screen and (max-width: 768px) {
+    main {
+        margin-right: 30px;
+    }
+}
+
+form { 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+[type=checkbox], [type=radio] {
+width: 2.25em;
+margin-left: 10px;
+
+}
+
+ul li {
+    list-style: none;
+}
+
+.movies {
+    list-style: none;
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 32px;
+}
+
+.movie {
+    text-align: center;
+}
+
+.movie p, .movie h3{
+    margin: 0;
+}
